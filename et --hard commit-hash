@@ -1,0 +1,108 @@
+[33mcommit e2fd14b9c50286ec78cfde677421c778e4360a7e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: ce4cc34 d6998de
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Tue Aug 27 14:27:33 2024 -0300
+
+    Merge branch 'main' of https://github.com/Marianadias503/Dt-Money
+
+[33mcommit ce4cc344813c2cd0b389a73ae024c37286977fc5[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Tue Aug 27 14:25:52 2024 -0300
+
+    corrigindo bug e realizando requisicao http
+
+[33mcommit d6998deb759f1831460d935545bc8a56b7e15a59[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Mon Aug 26 15:08:29 2024 -0300
+
+    teste
+
+[33mcommit bbc8b0b9610d1df19be76760e65c2a0b23c49984[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Fri Aug 23 16:52:09 2024 -0300
+
+    TransactionsContainer e SearchForm nn aparecem em tela
+
+[33mcommit 8401b42c31f24c7cf2c4f0a8ef1201895cf0d192[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Aug 15 13:11:50 2024 -0300
+
+    criando contexto de transações
+
+[33mcommit 0837ef09f802ec65212036330055cbfc6af0352d[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Aug 15 12:35:30 2024 -0300
+
+    realizando requisição HTTP
+
+[33mcommit 4185a5e0593e50551aa992f982833b48e7a9006f[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Aug 15 10:46:55 2024 -0300
+
+    teste
+
+[33mcommit 95a9d7f910d23f54e1517f65e2663c23f92b42eb[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Tue Aug 13 14:06:33 2024 -0300
+
+    configurando o json server
+
+[33mcommit e60a3f966840871d0b0ad3a5d024732c29d179c4[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Jul 25 17:26:26 2024 -0300
+
+    estilizando um botão acessivel
+
+[33mcommit 1c26341b42bdc2672679597d4d3ec8a8feb005bc[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Jul 25 17:06:01 2024 -0300
+
+    crianfo e estilizando os botõies de entrada e saida
+
+[33mcommit bc023311e67db7a9deff9a7b4fbfc747987edc7d[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Jul 25 16:46:20 2024 -0300
+
+    modal de nova transação
+
+[33mcommit 26322de5ed666077ff64a1bb6c4f5e0b2ff176ed[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Jul 25 15:59:12 2024 -0300
+
+    crinando um modal acessivel
+
+[33mcommit 632b4b289f97b4684d5efe163cc4ac1a0b11a6cb[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Jul 25 15:31:17 2024 -0300
+
+    estilizando o componente SearchForm
+
+[33mcommit 90f1d59de1c5ad27f9cccc3bf5fa0e5de863d0e4[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Thu Jul 25 15:15:01 2024 -0300
+
+    estilizando tabela de transações
+
+[33mcommit 92e682396f73d1773a6664ad2e905f50829b15e0[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Wed Jul 24 17:04:32 2024 -0300
+
+    estilizando componente summary
+
+[33mcommit 4e534184b573f6f0a87b8298eb28db5a157b6ebf[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Wed Jul 24 15:56:55 2024 -0300
+
+    concertando bug do transactions
+
+[33mcommit 90785111f4fdccb7b411b5538411f4293c6723e1[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Wed Jul 24 15:43:36 2024 -0300
+
+    estilizando o componente header
+
+[33mcommit 682299d0cd45a225ff560bc0533990e86db3510d[m
+Author: Mariana Dias <marianamkt6@gmail.com>
+Date:   Wed Jul 24 11:13:30 2024 -0300
+
+    adiconando arquivos e configurando a setup do projeto
