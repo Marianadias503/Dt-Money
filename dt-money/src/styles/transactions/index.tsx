@@ -1,46 +1,54 @@
+import { useEffect, useState } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHightLight, TransactionsContainer, TransactionsTable } from "./styles";
 
-export function Transactions(){
-    return (
-        <div>
-            <Header />
-            <Summary/>
+interface Transaction {
+  id: number;
+  description: string;
+  type: 'income' | 'outcome';
+  price: number;
+  category: string;
+  createdAt: string;
+}
 
-           <TransactionsContainer>
-            <SearchForm />
-           <TransactionsTable>
-                <tbody>
-                    <tr>
-                        <td width="50%">Desenvolvimento do site</td>
-                        <td>
-                            <PriceHightLight variant="income">
-                            R$12.000,00
-                            </PriceHightLight>
-                         </td>
-                        <td>venda</td>
-                        <td>13/04/2022</td>
-                    </tr>
-                    <tr>
-                        <td width="50%">Hamburguer</td>
-                        <td>
-                            <PriceHightLight variant="outcome">
-                              - R$59,90
-                            </PriceHightLight>
-                         </td>
-                        <td>Alimentação</td>
-                        <td>10/04/2022</td>
-                    </tr>
-                    
-                </tbody>
-            </TransactionsTable>
-           </TransactionsContainer>
+export function Transactions() {
+  const [transactions, setTransactions] = useState<Transaction[]>([]);
 
+  async function loadTransactions() {
+    const response = await fetch('http://localhost:3000/transactions');
+    const data = await response.json();
+    setTransactions(data);
+  }
 
+  useEffect(() => {
+    loadTransactions();
+  }, []); // Adiciona um array vazio como dependência para executar apenas uma vez
 
-
-        </div>
-    )
+  return (
+    <div>
+      <Header />
+      <Summary />
+      <TransactionsContainer>
+        <SearchForm />
+        <TransactionsTable>
+          <tbody>
+            {transactions.map(transaction => (
+              <tr key={transaction.id}>
+                <td width="50%">{transaction.description}</td>
+                <td>
+                  <PriceHightLight variant={transaction.type}>
+                    {transaction.price}
+                  </PriceHightLight>
+                </td>
+                <td>{transaction.category}</td>
+                <td>{transaction.createdAt}</td>
+              </tr>
+            ))}
+          </tbody>
+        </TransactionsTable>
+      </TransactionsContainer>
+    </div>
+  );
 }
