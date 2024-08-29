@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const SeacrhFormContainer = styled.form`
+export const SearchFormContainer = styled.form`
 
 display:flex;
 gap:1rem;
@@ -37,11 +37,11 @@ button{
 
     &disabled{
         opacity:0.7;
-      
+        cursor:not-allowed;
 
     }
 
-    &:not(:disabled) &:hover {
+    &:not(:disabled) :hover {
         background:${props=>props.theme["green-500"]};;
         border-color: 1px solid ${props=>props.theme["green-500"]};
         color: ${props=>props.theme["white"]};

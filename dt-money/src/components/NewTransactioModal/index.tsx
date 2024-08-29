@@ -9,7 +9,7 @@ const newTransactionFormSchema = z.object({
   description: z.string(),
   price: z.number(),
   category: z.string(),
-  type: z.enum(['income', 'outcome']),
+ // type: z.enum(['income', 'outcome']),
 });
 
 type NewTransactionFormInputs = z.infer<typeof newTransactionFormSchema>;
@@ -18,6 +18,7 @@ export function NewTransactionModal() {
   const {
     register,
     handleSubmit,  
+    formState : { isSubmitting }
   } = useForm<NewTransactionFormInputs>({
     resolver: zodResolver(newTransactionFormSchema),
   });
@@ -77,7 +78,7 @@ export function NewTransactionModal() {
             </TransactionTypeButton>
           </TransactionType>
 
-          <button type="submit">Cadastrar</button>
+          <button type="submit" disabled={ isSubmitting }>Cadastrar</button>
         </form>
       </Content>
     </Dialog.Portal>
