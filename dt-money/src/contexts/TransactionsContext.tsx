@@ -16,6 +16,7 @@ interface TransactionContextType {
   transactions: Transaction[];
   fetchTransactions: (query?: string) => Promise<void>;
   addTransaction: (newTransaction: Transaction) => void;
+  deleteTransaction: (id: number) => void; // Adiciona o método de exclusão
 }
 
 // Define o tipo das propriedades do provedor de transações
@@ -75,13 +76,24 @@ export function TransactionProvider({ children }: TransactionsProviderProps) {
     });
   }
 
+  // Função para excluir uma transação
+  function deleteTransaction(id: number) {
+    setTransactions((prevTransactions) => {
+      const updatedTransactions = prevTransactions.filter(
+        (transaction) => transaction.id !== id
+      );
+      console.log("Transações atualizadas após exclusão:", updatedTransactions);
+      return updatedTransactions;
+    });
+  }
+
   // Efeito para buscar transações ao montar o componente
   useEffect(() => {
     fetchTransactions();
   }, []);
 
   return (
-    <TransactionsContext.Provider value={{ transactions, fetchTransactions, addTransaction }}>
+    <TransactionsContext.Provider value={{ transactions, fetchTransactions, addTransaction, deleteTransaction }}>
       {children}
     </TransactionsContext.Provider>
   );

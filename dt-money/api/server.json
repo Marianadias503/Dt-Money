@@ -1,0 +1,24 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "description": "desenvolvimento do site",
+      "type": "income",
+      "category": "Venda",
+      "price": 1000,
+      "createdAt": "2024-07-29T19:30:44.505Z"
+    },
+    {
+      "id": "2",
+      "description": "Compras para casa ",
+      "type": "outcome",
+      "category": "Compras",
+      "price": 200,
+      "createdAt": "2024-07-23T19:30:44.505Z"
+    }
+
+
+
+    
+  ]
+}
